@@ -256,7 +256,6 @@ public final class GoogleApiPayFlowImpl extends PayFlow {
             // Generally, there is no need to show an error to
             // the user as the Google Pay API will do that.
             payPromise.reject(
-              getErrorCode("stripe"),
               status.getStatusMessage()
             );
             break;
