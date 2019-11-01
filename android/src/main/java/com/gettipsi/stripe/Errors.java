@@ -30,8 +30,7 @@ public final class Errors {
   static String toErrorCode(@NonNull Exception exception) {
     ArgCheck.nonNull(exception);
     String simpleName = exception.getClass().getSimpleName();
-    // String errorCode = exceptionNameToErrorCode.get(simpleName);
-    String errorCode = exception.getMessage();
+    String errorCode = exceptionNameToErrorCode.get(simpleName);
     ArgCheck.nonNull(errorCode, simpleName);
 
     return errorCode;
