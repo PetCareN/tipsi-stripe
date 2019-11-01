@@ -253,13 +253,11 @@ public final class GoogleApiPayFlowImpl extends PayFlow {
             break;
           case AutoResolveHelper.RESULT_ERROR:
             Status status = AutoResolveHelper.getStatusFromIntent(data);
-            String statusCode = status.getStatusCode();
+            Int statusCode = status.getStatusCode();
             // Log the status for debugging.
             // Generally, there is no need to show an error to
             // the user as the Google Pay API will do that.
-            Log.d("EMILY-ERROR-STATUS", "status7: "+statusCode);
-            Log.d(statusCode == "409");
-            if (statusCode == "409") {
+            if (statusCode == 409) {
               payPromise.reject(
                 "409",
                 status.getStatusMessage()
