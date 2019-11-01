@@ -258,8 +258,8 @@ public final class GoogleApiPayFlowImpl extends PayFlow {
             // Generally, there is no need to show an error to
             // the user as the Google Pay API will do that.
             Log.d("EMILY-ERROR-STATUS", "status7: "+statusCode);
-            Log.d(statusCode === "409");
-            if (statusCode === "409") {
+            Log.d(statusCode == "409");
+            if (statusCode == "409") {
               payPromise.reject(
                 "409",
                 status.getStatusMessage()
