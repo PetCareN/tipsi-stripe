@@ -256,10 +256,10 @@ public final class GoogleApiPayFlowImpl extends PayFlow {
             Log.d("EMILY-ERROR-STATUS", "status1: test");
             Log.d("EMILY-ERROR-STATUS", "status2: "+status);
             Log.d("EMILY-ERROR-STATUS", "status3: "+data);
-            Log.d("EMILY-ERROR-STATUS", "status3: "+resultCode);
-            Log.d("EMILY-ERROR-STATUS", "status3: "+getErrorCode("stripe"));
-            Log.d("EMILY-ERROR-STATUS", "status3: "+status.getStatusMessage();
-            Log.d("EMILY-ERROR-STATUS", "status3: "+AutoResolveHelper.RESULT_ERROR);
+            Log.d("EMILY-ERROR-STATUS", "status4: "+resultCode);
+            Log.d("EMILY-ERROR-STATUS", "status5: "+getErrorCode("stripe"));
+            Log.d("EMILY-ERROR-STATUS", "status6: "+status.getStatusMessage());
+            Log.d("EMILY-ERROR-STATUS", "status7: "+AutoResolveHelper.RESULT_ERROR);
             // Log the status for debugging.
             // Generally, there is no need to show an error to
             // the user as the Google Pay API will do that.
