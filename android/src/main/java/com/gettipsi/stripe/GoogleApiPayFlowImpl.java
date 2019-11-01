@@ -3,6 +3,7 @@ package com.gettipsi.stripe;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReadableMap;
@@ -252,7 +253,9 @@ public final class GoogleApiPayFlowImpl extends PayFlow {
             break;
           case AutoResolveHelper.RESULT_ERROR:
             Status status = AutoResolveHelper.getStatusFromIntent(data);
-            alert(data)
+            Log.d("EMILY-ERROR-STATUS", "status1: test");
+            Log.d("EMILY-ERROR-STATUS", "status2: "+status);
+            Log.d("EMILY-ERROR-STATUS", "status3: "+data);
             // Log the status for debugging.
             // Generally, there is no need to show an error to
             // the user as the Google Pay API will do that.
